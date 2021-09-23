@@ -1,0 +1,228 @@
+:root {
+  --primary-title-color: #ffffff;
+  --secondaty-title-color: #212121;
+  --primary-text-color: #212121;
+  --secondaty-text-color: #757575;
+  --cursor-text-color: #2196f3;
+  --secondary-logo-color: #000000;
+  --primary-white-color: #ffffff;
+  --footer-background-color: #2f303a;
+  --hero-background-color: #2f303a;
+  --team-background-color: #f5f4fa;
+}
+
+body {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+}
+
+/* списки и подчеркивания */
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+
+/* лого */
+.logo{
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--cursor-text-color);
+}
+
+.logo-header {
+  color: var(--secondary-logo-color);
+}
+
+.logo-footer {
+  color:var(--primary-white-color)}
+
+
+/* --------студия---------- */
+/* шапка сайта */
+.header-link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.header-link:hover,
+.header-link:focus,
+.current-link {
+  color: var(--cursor-text-color);
+}
+
+
+.header-contacts-link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondaty-text-color);
+}
+
+.header-contacts-link:hover,
+.header-contacts-link:focus {
+  color: var(--cursor-text-color);
+}
+
+/* подвал сайта */
+.footer {
+  background-color: var(--footer-background-color);
+}
+
+.footer-address {
+  font-style: normal;
+}
+
+.footer-address-map-link {
+  font-weight: normal;
+  line-height: 1.72;
+  color: var(--primary-title-color);
+}
+
+.footer-address-link {
+  font-weight: normal;
+  line-height: 1.72;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-address-map-link:hover,
+.footer-address-map-link:focus {
+  color: var(--cursor-text-color);
+}
+.footer-address-link:hover,
+.footer-address-link:focus {
+  color: var(--cursor-text-color);
+}
+
+/* главная часть - студия */
+/* section hero */
+.hero {
+  background-color: var(--hero-background-color);
+}
+
+.hero-item {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.37;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-title-color);
+}
+
+.hero-btn {
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.89;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  color: var(--primary-title-color);
+}
+
+/* о преимуществах */
+.benefits-title {
+  font-weight: bold;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--secondaty-title-color);
+}
+
+.benefits-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--secondaty-text-color);
+}
+
+/* вид деятельности */
+.activity-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--secondaty-title-color);
+}
+
+.activity-img {
+  width: 370px;
+  height: 294px;
+  left: 215px;
+  top: 1061px;
+}
+
+/* знакомство с командой */
+.team {
+  background-color: var(--team-background-color);
+}
+
+.team-title-primary {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--secondaty-title-color);
+}
+
+.team-text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--secondaty-text-color);
+}
+
+/* ----------портфолио---------- */
+.filter-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  background-color: var(--team-background-color);
+  cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn:focus,
+.current-btn {
+  background-color: var(--cursor-text-color);
+  color: var(--primary-white-color);
+}
+
+.examples-tittle {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--secondaty-title-color);
+}
+
+.examples-text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--secondaty-text-color);
+}
