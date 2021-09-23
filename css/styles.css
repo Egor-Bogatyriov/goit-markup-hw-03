@@ -86,6 +86,10 @@ body {
   color: var(--secondaty-text-color);
 }
 
+.header-contacts-link:not(:last-child) {
+  margin-right: 50px;
+}
+
 .header-contacts-link:hover,
 .header-contacts-link:focus {
   color: var(--cursor-text-color);
@@ -96,6 +100,30 @@ body {
   margin: 0;
   margin-left: 15px;
   margin-left: 15px;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+}
+
+.header-contacts-list {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.logo-header {
+  margin-right: 90px;
 }
 
 /* подвал сайта */
