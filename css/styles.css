@@ -9,6 +9,7 @@
   --footer-background-color: #2f303a;
   --hero-background-color: #2f303a;
   --team-background-color: #f5f4fa;
+  --card-set-gap: 30px;
 }
 
 p,
@@ -97,18 +98,19 @@ body {
 
 .container {
   width: 1200px;
-  margin: 0;
-  margin-left: 15px;
-  margin-left: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.header-container {
+/* .header-container {
   outline: 1px solid red;
 }
 
 .header-list li {
   outline: 1px solid red;
-}
+} */
 
 .header-container {
   display: flex;
@@ -136,14 +138,19 @@ body {
 .header-contact {
   margin-left: auto;
   display: flex;
+  align-items: center;
 }
 
 .header-contacts-item:not(:last-child) {
   margin-right: 50px;
 }
 
-.header-item:not(:last-child) {
-  margin-right: 40px;
+/* .header-item:not(:last-child) {
+  margin-right: 50px;
+} */
+
+.header-list .header-item + .header-item {
+  margin-left: 50px;
 }
 
 /* подвал сайта */
@@ -208,6 +215,10 @@ body {
 }
 
 /* о преимуществах */
+.benefits-list{
+  display: flex;
+}
+
 .benefits-title {
   font-weight: bold;
   line-height: 1.2;
@@ -224,6 +235,10 @@ body {
 }
 
 /* вид деятельности */
+.activity-list{
+  display: flex;
+}
+
 .activity-title {
   font-weight: bold;
   font-size: 36px;
@@ -242,6 +257,10 @@ body {
 /* знакомство с командой */
 .team {
   background-color: var(--team-background-color);
+}
+
+.team-list {
+  display: flex;
 }
 
 .team-title-primary {
@@ -278,6 +297,12 @@ body {
   cursor: pointer;
 }
 
+.filter-list{
+  display: flex;
+}
+
+
+
 .filter-btn:hover,
 .filter-btn:focus,
 .current-btn {
@@ -291,6 +316,7 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondaty-title-color);
+  margin-bottom: 4px;
 }
 
 .examples-text {
@@ -298,4 +324,31 @@ body {
   font-size: 16px;
   line-height: 1.9;
   color: var(--secondaty-text-color);
+}
+
+.examples-list {
+  /* outline: 1px solid tomato; */
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-left: calc( -1 * var(--card-set-gap));
+  margin-top: calc( -1 * var(--card-set-gap));
+}
+
+.examples-list .list-item {
+  /* outline: 1px solid teal; */
+  flex-basis: calc(100% / 3 - 30px);
+
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+}
+
+.list-item-text {
+  padding: 20px 24px ;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
