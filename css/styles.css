@@ -275,20 +275,38 @@ body {
 /* знакомство с командой */
 .team {
   background-color: var(--team-background-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team-list {
   display: flex;
+  margin-right: -30px;
 }
 
+.team-item{
+  flex-basis: calc(100% / 4 - 30px);
+  margin-right: 30px;
+} 
+
 .team-title-primary {
+  margin-bottom: 50px;
+
   font-weight: bold;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
 }
 
+.name-block{
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-title {
+  text-align: center;
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
@@ -296,6 +314,7 @@ body {
 }
 
 .team-text {
+  text-align: center;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.9;
