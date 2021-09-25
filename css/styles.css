@@ -9,7 +9,9 @@
   --footer-background-color: #2f303a;
   --hero-background-color: #2f303a;
   --team-background-color: #f5f4fa;
+  --border-line-color: #ecec;
   --card-set-gap: 30px;
+  --card-set-item: 3;
 }
 
 p,
@@ -52,9 +54,11 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: auto;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 94px 0;
 }
 
 /* лого */
@@ -79,8 +83,16 @@ body {
 /* --------студия---------- */
 /* шапка сайта */
 
+.header-contacts-list {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
 .header-link {
   display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   font-weight: 500;
   line-height: 1.14;
@@ -115,14 +127,12 @@ body {
 } */
 
 .header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid var(--border-line-color);
 }
 
 .header-container {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .header-navigation {
@@ -143,12 +153,6 @@ body {
   display: inline-block;
 }
 
-.header-contact {
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-}
-
 .header-contacts-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -162,13 +166,6 @@ body {
 }
 
 /* подвал сайта */
-
-.footer-section {
-  padding-top: 60px;
-  padding-right: auto;
-  padding-bottom: 60px;
-  padding-left: 215px;
-}
 
 .footer {
   background-color: var(--footer-background-color);
@@ -220,6 +217,7 @@ body {
 }
 
 .hero-item {
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.37;
@@ -231,7 +229,6 @@ body {
 
 .hero-btn {
   display: block;
-  margin-top: 30px;
   margin-right: auto;
   margin-left: auto;
 
@@ -253,18 +250,22 @@ body {
 
 /* о преимуществах */
 
-.benefits-container {
+.benefits {
   padding-bottom: 47px;
+  --card-set-item: 4;
 }
 
-.benefits-list {
+.flex-list {
   display: flex;
-  margin-right: -30px;
+  flex-wrap: wrap;
+  margin-left: calc(var(--card-set-gap) * -1);
+  margin-top: calc(var(--card-set-gap) * -1);
 }
 
-.benefits-item {
-  margin-right: 30px;
-  flex-basis: calc(100% / 4 -30px);
+.flex-item {
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+  flex-basis: calc(100% / var(--card-set-item) - var(--card-set-gap));
 }
 
 .benefits-title {
@@ -288,7 +289,7 @@ body {
 
 /* вид деятельности */
 
-.activity-container {
+.activity {
   padding-top: 47px;
 }
 
@@ -321,6 +322,7 @@ body {
 
 .team {
   background-color: var(--team-background-color);
+  --card-set-item: 4;
 }
 
 .team-list {
@@ -346,8 +348,11 @@ body {
   text-align: center;
 }
 
+.team-img {
+  margin-bottom: 30px;
+}
+
 .name-block {
-  margin-top: 30px;
   padding-bottom: 30px;
 }
 
