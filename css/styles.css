@@ -40,6 +40,7 @@ body {
 }
 
 /* списки и подчеркивания */
+
 .link {
   text-decoration: none;
 }
@@ -57,6 +58,7 @@ body {
 }
 
 /* лого */
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -76,6 +78,7 @@ body {
 
 /* --------студия---------- */
 /* шапка сайта */
+
 .header-link {
   display: block;
 
@@ -110,6 +113,10 @@ body {
 .header-list li {
   outline: 1px solid red;
 } */
+
+.header {
+  border: 1px solid #ececec;
+}
 
 .header-container {
   display: flex;
@@ -155,6 +162,7 @@ body {
 }
 
 /* подвал сайта */
+
 .footer-section {
   padding-top: 60px;
   padding-right: auto;
@@ -199,10 +207,11 @@ body {
 
 /* главная часть - студия */
 /* section hero */
+
 .hero-container {
   padding-top: 200px;
   padding-right: 252px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
   padding-left: 252px;
 }
 
@@ -211,8 +220,6 @@ body {
 }
 
 .hero-item {
-  /* max-width: 696px; */
-
   font-weight: 900;
   font-size: 44px;
   line-height: 1.37;
@@ -245,6 +252,7 @@ body {
 }
 
 /* о преимуществах */
+
 .benefits-container {
   padding-bottom: 47px;
 }
@@ -279,6 +287,7 @@ body {
 }
 
 /* вид деятельности */
+
 .activity-container {
   padding-top: 47px;
 }
@@ -309,6 +318,7 @@ body {
 }
 
 /* знакомство с командой */
+
 .team {
   background-color: var(--team-background-color);
 }
@@ -360,6 +370,7 @@ body {
 }
 
 /* ----------портфолио---------- */
+
 .filter-btn {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
