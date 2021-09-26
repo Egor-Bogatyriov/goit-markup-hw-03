@@ -9,7 +9,7 @@
   --footer-background-color: #2f303a;
   --hero-background-color: #2f303a;
   --team-background-color: #f5f4fa;
-  --border-line-color: #ecec;
+  --border-line-color: #ececec;
   --card-set-gap: 30px;
   --card-set-item: 3;
 }
@@ -39,6 +39,8 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   background-color: var(--primary-white-color);
+  margin: 0;
+  padding: 0;
 }
 
 /* списки и подчеркивания */
@@ -169,11 +171,12 @@ body {
 
 .footer {
   background-color: var(--footer-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-address {
   margin-top: 20px;
-
   font-style: normal;
 }
 
@@ -263,9 +266,9 @@ body {
 }
 
 .flex-item {
+  flex-basis: calc(100% / var(--card-set-item) - var(--card-set-gap));
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
-  flex-basis: calc(100% / var(--card-set-item) - var(--card-set-gap));
 }
 
 .benefits-title {
@@ -396,8 +399,7 @@ body {
 .filter-list {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .filter-item {
@@ -411,9 +413,9 @@ body {
   color: var(--primary-white-color);
 }
 
-.examples-container {
+/* .examples-container {
   padding-top: 0;
-}
+} */
 
 .examples-tittle {
   font-weight: bold;
@@ -431,11 +433,7 @@ body {
   color: var(--secondaty-text-color);
 }
 
-.examples-list {
-  /* outline: 1px solid tomato; */
-  padding: 0;
-  margin: 0;
-
+/* .examples-list {
   display: flex;
   flex-wrap: wrap;
 
@@ -444,12 +442,12 @@ body {
 }
 
 .examples-list .list-item {
-  /* outline: 1px solid teal; */
+  outline: 1px solid teal;
   flex-basis: calc(100% / 3 - 30px);
 
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
-}
+} */
 
 .list-item-text {
   padding: 20px 24px;
