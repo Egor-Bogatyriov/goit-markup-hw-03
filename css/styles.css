@@ -96,10 +96,10 @@ body {
 /* --------студия---------- */
 /* шапка сайта */
 
-.header-contacts-list {
-  margin-left: auto;
+.header-contact {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 
 .header-link {
